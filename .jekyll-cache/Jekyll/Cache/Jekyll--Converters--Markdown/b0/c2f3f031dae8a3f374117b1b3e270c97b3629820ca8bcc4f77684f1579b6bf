@@ -1,4 +1,4 @@
-I"Å<div>
+I"˝<div>
 
   <div>
     
@@ -27,21 +27,11 @@
     <a name="regularization"></a>
     
     <article>
-        <li><font size="3"><a href="/blog/2018/01/post-2">Title of post 2</a></font></li>
+        <li><font size="3"><a href="/blog/2018/01/post-1">Title of post 1</a></font></li>
     </article>
     
-  </div>
-
-  <div>
-    
-    <div id="#discussion"></div>
-    <p></p>
-    
-    <h3>Discussion</h3>
-    <a name="discussion"></a>
-    
     <article>
-        <li><font size="3"><a href="/blog/2018/01/post-1">Title of post 1</a></font></li>
+        <li><font size="3"><a href="/blog/2018/01/post-2">Title of post 2</a></font></li>
     </article>
     
   </div>

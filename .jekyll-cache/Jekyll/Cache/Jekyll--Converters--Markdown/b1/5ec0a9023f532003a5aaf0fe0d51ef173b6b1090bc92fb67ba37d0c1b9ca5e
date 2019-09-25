@@ -1,8 +1,0 @@
-I"ß<ul>
-	<li><a href="courses">Courses undertaken</a> - A list of important courses that I have completed so far.</li>
-	<li><a href="extracurricular">Extracurriculars</a> - A glimpse into my non-academic life!</li>
-	<li><a href="travel">Travel</a> - Some moments from my trips to beautiful places around the world.</li>
-</ul>
-
-<p>You can add other topics by editing <code class="highlighter-rouge">miscellany.md</code> and <code class="highlighter-rouge">_data/menu.yml</code>.</p>
-:ET

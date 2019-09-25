@@ -3,7 +3,7 @@ title: Phani Atmakur
 general_email: phani@kernalinc.com
 
 description: > # this means to ignore newlines until "baseurl:"
-  I have a strong passion for technology. I write mostly about Python, Django, Pandas, Data Science, Machine Learning, Big Data and lot more.
+  I have a strong passion for technology. I blog mostly about Python, R, Django, Pandas, Data Science, Programming (C# & Python), Big Data and lot more.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 
