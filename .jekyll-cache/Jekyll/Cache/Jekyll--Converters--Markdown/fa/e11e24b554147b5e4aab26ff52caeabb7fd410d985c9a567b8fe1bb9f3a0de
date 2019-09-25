@@ -1,0 +1,45 @@
+I"/<p>Write your post content here in normal <code class="highlighter-rouge">markdown</code>. An example post is shown below for reference.</p>
+
+<h3 id="introduction">Introduction</h3>
+<p>Regularization is an important step during the training of neural networks. It helps to generalize the model by reducing the possibility of overfitting the training data. There are several types of regularization techniques, with L2 , L1, elastic-net (linear combination of L2 and L1 regularization), dropout and drop-connect being the major ones. While L2, L1 and elastic-net regularization techniques work by constraining the trainable parameters (or <em>weights</em>) from attaining large values (so that no drastic changes in output are observed for slight changes in the input; or in other words, they prefer <em>diffused</em> weights rather than <em>peaked</em> ones), <strong>dropout</strong> and drop-connect work by averaging the task over a dynamically and randomly generated large <em>ensemble</em> of networks. These networks are obtained by randomly disconnecting neurons (<em>dropout</em>) or weights (<em>drop-connect</em>) from the original network so as to obtain a subnetwork on which the training process is carried out (although for <script type="math/tex">\approx1</script> epoch for each, since the chance of the same subnetwork being generated again is very rare).</p>
+
+<p>Application of dropout to feedforward neural networks gives promising results. RNNs are thought of as individual <em>cells</em> that are <em>unfolded</em> over several time-steps, with the input at each time-step being a token of the sequence. When dropout is used for regularizing such a network, the ‘disturbance’ it generates at each time step propagates over a long interval, thereby decreasing the network’s ability to represent long range dependencies. Thus, applying dropout in the standard manner to RNNs fails to give any improvement. It is here where <em>Zaremba et al</em>’s research comes into the picture.</p>
+<h3 id="network-description">Network description</h3>
+<p>The network architecture that <em>Zaremba et al</em> proposed is quite simple and intuitive. In case of deep RNNs (i.e. RNNs spanning over several layers (<script type="math/tex">h</script>) where output of <script type="math/tex">h_{l-1}^{t}</script> is used as the input for <script type="math/tex">h_l^t</script>), all connections between the cells in unfolded state can be broadly classified into two categories - <em>recurrent</em> and <em>non-recurrent</em>. The connections between cells in the same layer i.e. <script type="math/tex">h_l^t ~-~ h_l^{t+1}~~\forall t</script> are <em>recurrent</em> connections, and those between cells in adjacent layers i.e. <script type="math/tex">h_l^t ~-~ h_{l+1}^t~~\forall l</script> are <em>non-recurrent</em> connections. <em>Zaremba et al</em> suggested that <strong>dropout</strong> should be applied only to non-recurrent connections - thereby preventing problems which arose earlier.</p>
+
+<p>The modified network for LSTM units can be mathematically represented as follows:</p>
+
+<p>Denoting <script type="math/tex">T_{m,n}</script> as an affine transformation from <script type="math/tex">\mathbb{R}^m\rightarrow\mathbb{R}^n</script> ( i.e. <script type="math/tex">T_{m,n}(x)=Wx+b</script> where <script type="math/tex">x\in\mathbb{R}^{m\times1}</script>, <script type="math/tex">W\in\mathbb{R}^{n\times m}</script> and <script type="math/tex">b\in\mathbb{R}^{n\times1}</script> and similarly for multiple inputs) and <script type="math/tex">\otimes</script> as elementwise multiplication, we have :</p>
+
+<script type="math/tex; mode=display">f_l^t=\text{sigmoid}\left(T_{N,D}^1\left(\textbf{D}\left(h_{l-1}^t\right) ; h_l^{t-1}\right)\right) \\
+i_l^t=\text{sigmoid}\left(T_{N,D}^2\left(\textbf{D}\left(h_{l-1}^t\right) ; h_l^{t-1}\right)\right) \\
+o_l^t=\text{sigmoid}\left(T_{N,D}^3\left(\textbf{D}\left(h_{l-1}^t\right) ; h_l^{t-1}\right)\right) \\
+u_l^t=\text{tanh}\left(T_{N,D}^4\left(\textbf{D}\left(h_{l-1}^t\right) ; h_l^{t-1}\right)\right) \\
+c_l^t=c_l^{t-1}\otimes f_l^t + u_l^t\otimes i_l^t \\
+h_l^t = \text{tanh}\left(c_l^t\right)\otimes o_l^t</script>
+
+<p>Here, <script type="math/tex">\textbf{D}</script> is the dropout <em>layer</em> or operator which sets a subset of its input randomly to zero with dropout probability <code class="highlighter-rouge">p</code>. This modification can be adopted for any other RNN architecture.</p>
+
+<p><em>Zaremba et al</em> used these architectures for their experiments in which each cell was unrolled for 35 steps. Mini-batch size was 20 for both :</p>
+
+<p><strong>Medium LSTM</strong> :
+Hidden-layer dimension = <code class="highlighter-rouge">650</code>,
+Weights initialized uniformly in <code class="highlighter-rouge">[-0.05,0.05]</code>,
+Dropout probability = <code class="highlighter-rouge">0.5</code>,
+Number of epochs = <code class="highlighter-rouge">39</code>,
+Learning rate = <code class="highlighter-rouge">1</code> which decays by a factor of <code class="highlighter-rouge">1.2</code> after 6 epochs,
+Gradients clipped at <code class="highlighter-rouge">5</code>.</p>
+
+<p><strong>Large LSTM</strong> :
+Hidden-layer dimension = <code class="highlighter-rouge">1500</code>,
+Weights initialized uniformly in <code class="highlighter-rouge">[-0.04,0.04]</code>,
+Dropout probability = <code class="highlighter-rouge">0.65</code>,
+Number of epochs = <code class="highlighter-rouge">55</code>,
+Learning rate = <code class="highlighter-rouge">1</code> which decays by a factor of <code class="highlighter-rouge">1.15</code> after 14 epochs,
+Gradients clipped at <code class="highlighter-rouge">10</code>.</p>
+<h3 id="result-highlights">Result highlights</h3>
+<ul>
+  <li>78.4 PPL on Penn TreeBank dataset using a single <strong>Large LSTM</strong></li>
+  <li>68.7 PPL on Penn TreeBank dataset using an ensemble of 38 <strong>Large LSTM</strong>s</li>
+</ul>
+:ET
