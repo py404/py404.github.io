@@ -1,0 +1,23 @@
+I"Z<p>Below is a list of my projects. You can also check out my Github profile <a href="https://github.com/py404" target="_blank"><b>here</b></a> for a complete list of projects that I’ve worked on.</p>
+
+<ul>
+	<li>
+		<b>Pybarcode-GUI</b> <br />
+		A graphical user interface application to print barcode labels (tested on Zebra label printers). <br />
+		Built on Python 3.6 version, this GUI is the next version of my pybarcode project.<br />
+		New features included in this version are: text box search and printing of barcodes, free text barcode printing, selecting local or network printers attached to the workstation, choosing format of barcode labels and choosing number of labels to print. <br />
+		<a href="https://github.com/py404/pybarcode" target="_blank"><div class="color-button">CODE</div></a>
+	</li><br />
+	<li>
+		<b>pybarcode</b> <br />
+		A python script (written in Python 2.7) to print barcode labels (tested on Zebra label printers). <br />
+		<a href="https://github.com/py404/pybarcode" target="_blank"><div class="color-button">CODE</div></a>
+	</li><br />
+	<li>
+		<b>tiff-viewer</b> <br /> 
+		A simple web application built with Python and Flask web framework to search and open ".TIFF" or ".TIF" files in web browser.<br />
+		<a href="https://github.com/py404/tiff-viewer" target="_blank"><div class="color-button">CODE</div></a>
+	</li><br />
+
+</ul>
+:ET

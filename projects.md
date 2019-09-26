@@ -4,20 +4,24 @@ permalink: /projects/
 title: Projects
 ---
 
-Here is a non-exhaustive list of my non-research projects. My research work can be found <a href="/research">here</a>. You can also check out my Github profile <a href="">here</a> for a complete list of my projects.
+Below is a list of my projects. You can also check out my Github profile <a href="https://github.com/py404" target="_blank"><b>here</b></a> for a complete list of projects that I've worked on.
 
 <ul>
 	<li>
-		<b>PyBarcode v1</b>: A python script (written in Python 2.7) to print barcode labels. <br> 
-		I developed this script to print barcodes regularly in the laboratory where I worked in the past. The idea was to print barcodes for different kinds of samples<br> 
-		<b>cx_Oracle</b> package is used to connect to Oracle database and <b>win32print</b> package is to connect to the printers in Windows ecosystem. <br>
-
-		Give a brief description of your first project here. You can link the relevant research paper(s), report, code repository and any other detail(s) by editing <i>projects.md</i> file<br>
-		<a href=""><div class="color-button">paper</div></a><a href="project_1.pdf"><div class="color-button">report</div></a><a href=""><div class="color-button">code</div></a>
+		<b>Pybarcode-GUI</b> <br>
+		A graphical user interface application to print barcode labels (tested on Zebra label printers). Built on Python 3.6 version, this GUI is the next version of my pybarcode project.<br>
+		New features included in this version are: text box search and printing of barcodes, free text barcode printing, selecting local or network printers attached to the workstation, choosing format of barcode labels and choosing number of labels to print. <br>
+		<a href="" target=""><div class="color-button">CODE</div></a>
 	</li><br>
 	<li>
-		<b>Project title #2</b>: Give a brief description of your second project here. You can link the relevant research paper(s), report, code repository and any other detail(s) by editing <i>projects.md</i> file<br>
-		<a href=""><div class="color-button">paper</div></a><a href="project_1.pdf"><div class="color-button">report</div></a><a href=""><div class="color-button">code</div></a>
+		<b>pybarcode</b> <br>
+		A python script (written in Python 2.7) to print barcode labels (tested on Zebra label printers). <br>
+		<a href="https://github.com/py404/pybarcode" target="_blank"><div class="color-button">CODE</div></a>
+	</li><br>
+	<li>
+		<b>tiff-viewer</b> <br> 
+		A simple web application built with Python and Flask web framework to search and open ".TIFF" or ".TIF" files in web browser.<br>
+		<a href="https://github.com/py404/tiff-viewer" target="_blank"><div class="color-button">CODE</div></a>
 	</li><br>
 
 </ul>
