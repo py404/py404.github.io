@@ -1,0 +1,6 @@
+I"�<h3 id="error-outofboundsdatetime">Error: OutOfBoundsDatetime</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pandas</span><span class="o">.</span><span class="n">tslib</span><span class="o">.</span><span class="n">OutOfBoundsDatetime</span><span class="p">:</span> <span class="n">Out</span> <span class="n">of</span> <span class="n">bounds</span> <span class="n">nanosecond</span> <span class="n">timestamp</span><span class="p">:</span> <span class="mi">2819</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">10</span> <span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span>
+</code></pre></div></div>
+<h2 id="overview">Overview</h2>
+<p>While I was performing some timeseries analysis, I tried pandas’s pd.DataFrame.to_datatime() method to convert a column of timestamps from “str” to “datetime”, I got this error message saying OutOfBoundsDatetime. My dataset had some typos and some timestamps had the following years - <strong>**2819, 2809, 2919, 2909</strong>*</p>
+:ET

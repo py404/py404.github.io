@@ -1,0 +1,4 @@
+I"<h3 id="error-outofboundsdatetime">Error: OutOfBoundsDatetime</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pandas</span><span class="o">.</span><span class="n">tslib</span><span class="o">.</span><span class="n">OutOfBoundsDatetime</span><span class="p">:</span> <span class="n">Out</span> <span class="n">of</span> <span class="n">bounds</span> <span class="n">nanosecond</span> <span class="n">timestamp</span><span class="p">:</span> <span class="mi">2262</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">01</span> <span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span>
+</code></pre></div></div>
+:ET
