@@ -1,0 +1,234 @@
+I" \<p>You can download the jupyter notebook or the project from GitHub here:
+<a href="https://github.com/py404/computer-vision-with-python-and-opencv2/?target='_blank'">Github project link</a></p>
+
+<p>In this blog post let us look into different ways of opening and displaying images using both matplotlib and OpenCV2</p>
+
+<p>Picture used in this tutorial is downloaded from <a href="www.pexels.com">www.pexels.com</a>. I do not own the picture. Picture is available for free download and complete credits goes to Chevanon Photography. Link below.</p>
+
+<p>Credit: Photo by Chevanon Photography from Pexels
+<a href="https://www.pexels.com/photo/two-yellow-labrador-retriever-puppies-1108099/?target='_blank'">PEXELS PHOTO DOWNLOAD LINK</a></p>
+
+<h2 id="note">Note:</h2>
+<h4 id="i-used-greeshot-software-to-add-labels-1-and-2-on-the-original-picture">I used greeshot software to add labels 1 and 2 on the original picture</h4>
+<h4 id="greeshot-download-link"><a href="https://getgreenshot.org/downloads/?target='_blank'">GREESHOT DOWNLOAD LINK</a></h4>
+
+<hr />
+<h1 id="opencv2-has-3-kinds-of-rotations-available">OpenCV2 has 3 kinds of rotations available</h1>
+<ol>
+  <li>cv2.ROTATE_90_CLOCKWISE</li>
+  <li>cv2.ROTATE_90_COUNTER_CLOCKWISE</li>
+  <li>cv2.ROTATE_180</li>
+</ol>
+
+<h1 id="opencv2-has-3-kinds-of-flips-available">OpenCV2 has 3 kinds of flips available</h1>
+<ol>
+  <li>flipCode = 0 (to flip vertically)</li>
+  <li>flipCode &gt; 0 (to flip horizontally)</li>
+  <li>flipCode &lt; 0 (to flip vertically first and then flip it horizontally)</li>
+</ol>
+
+<h1 id="load-libraries">Load libraries</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">cv2</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+</code></pre></div></div>
+
+<h1 id="display-original-image">Display original image</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s">'puppies2.png'</span><span class="p">)</span>
+
+<span class="n">puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">puppies</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;matplotlib.image.AxesImage at 0x197b3970&gt;
+</code></pre></div></div>
+
+<p><img src="output_5_1.png" alt="png" /></p>
+
+<h1 id="rotating-by-90-degrees-clockwise">Rotating by 90 degrees clockwise</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s">'puppies2.png'</span><span class="p">)</span>
+
+<span class="n">puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">puppies_rotated</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">ROTATE_90_CLOCKWISE</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">puppies_rotated</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;matplotlib.image.AxesImage at 0x21ba2450&gt;
+</code></pre></div></div>
+
+<p><img src="output_7_1.png" alt="png" /></p>
+
+<h1 id="rotating-by-90-degrees-counter-clockwise">Rotating by 90 degrees counter-clockwise</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s">'puppies2.png'</span><span class="p">)</span>
+
+<span class="n">puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">puppies_rotated</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">ROTATE_90_COUNTERCLOCKWISE</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">puppies_rotated</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;matplotlib.image.AxesImage at 0x21bd4eb0&gt;
+</code></pre></div></div>
+
+<p><img src="output_9_1.png" alt="png" /></p>
+
+<h1 id="rotating-by-180-degrees">Rotating by 180 degrees</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s">'puppies2.png'</span><span class="p">)</span>
+
+<span class="n">puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">puppies_rotated</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">ROTATE_180</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">puppies_rotated</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;matplotlib.image.AxesImage at 0x21c12930&gt;
+</code></pre></div></div>
+
+<p><img src="output_11_1.png" alt="png" /></p>
+
+<h1 id="flipping-an-image-upside-down-vertically-with-flipcode--0">Flipping an image upside down (vertically with flipcode = 0)</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s">'puppies2.png'</span><span class="p">)</span>
+
+<span class="n">puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">puppies_rotated</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="n">puppies</span><span class="p">,</span> <span class="n">flipCode</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">puppies_rotated</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;matplotlib.image.AxesImage at 0x21eaf8d0&gt;
+</code></pre></div></div>
+
+<p><img src="output_13_1.png" alt="png" /></p>
+
+<h1 id="flipping-an-image-horizontally-with-flipcode--0">Flipping an image horizontally (with flipcode &gt; 0)</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s">'puppies2.png'</span><span class="p">)</span>
+
+<span class="n">puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">puppies_rotated</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="n">puppies</span><span class="p">,</span> <span class="n">flipCode</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">puppies_rotated</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;matplotlib.image.AxesImage at 0x21f02ed0&gt;
+</code></pre></div></div>
+
+<p><img src="output_15_1.png" alt="png" /></p>
+
+<h1 id="flipping-an-image-vertically-and-horizontally-flipcode--0">Flipping an image vertically and horizontally (flipCode &lt; 0)</h1>
+
+<h3 id="meaning-image-is-first-flipped-vertically-upside-down-then-flipped-horizontally-left-to-right">Meaning, image is first flipped vertically (upside down), then flipped horizontally (left to right)</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s">'puppies2.png'</span><span class="p">)</span>
+
+<span class="n">puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+<span class="n">puppies_rotated</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="n">puppies</span><span class="p">,</span> <span class="n">flipCode</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">puppies_rotated</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;matplotlib.image.AxesImage at 0x21f41970&gt;
+</code></pre></div></div>
+
+<p><img src="output_17_1.png" alt="png" /></p>
+
+<h1 id="python-script-to-rotate-and-flip-images">Python script to rotate and flip images</h1>
+
+<h2 id="find-the-script-file-in-this-working-folder---rotate_and_flip_imagespy">Find the script file in this working folder -&gt; rotate_and_flip_images.py</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Import library
+</span><span class="kn">import</span> <span class="nn">cv2</span>
+
+<span class="c1"># Load default image
+</span><span class="n">puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s">'puppies2.png'</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">rotate</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>    
+    <span class="s">"""
+    rotate() function takes a parameter x (integer value) and outputs a window with default image
+    
+    if x = 1:
+    default image will be rotated 90 degrees clockwise
+    
+    if x = 2:
+    default image will be rotated 90 degress counter-clockwise
+    
+    if x = 3:
+    default image will be rotated 180 degrees
+    """</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">puppies_rotated</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">ROTATE_90_CLOCKWISE</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">puppies_rotated</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">ROTATE_90_COUNTERCLOCKWISE</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="n">puppies_rotated</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">ROTATE_180</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"Sorry invalid option"</span><span class="p">)</span>       
+            
+        <span class="n">cv2</span><span class="o">.</span><span class="n">namedWindow</span><span class="p">(</span><span class="s">'rotateoutput'</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">WINDOW_NORMAL</span><span class="p">)</span>
+        <span class="n">cv2</span><span class="o">.</span><span class="n">resizeWindow</span><span class="p">(</span><span class="s">'rotateoutput'</span><span class="p">,</span> <span class="p">(</span><span class="mi">600</span><span class="p">,</span><span class="mi">600</span><span class="p">))</span>
+        <span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s">'rotateoutput'</span><span class="p">,</span> <span class="n">puppies_rotated</span><span class="p">)</span>  
+        <span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">cv2</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Sorry invalid option"</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">flip</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>    
+    <span class="s">"""
+    flip() function takes a parameter y (integer value) and outputs a window with default image
+    
+    if y = 1:
+    default image will be flipped vertcially or upside down (i.e., flipCode = 0)
+    
+    if y = 2:
+    default image will be flipped horizontally with flipCode &gt; 0 (i.e., flipCode = 1)
+    
+    if y = 3:
+    default image will be flipped image vertically and horizontally, meaning image is first flipped vertically (upside down), then flipped horizontally (left to right) with flipCode &lt; 0 (i.e., flipCode = -1)
+    """</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">puppies_rotated</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="n">puppies</span><span class="p">,</span> <span class="n">flipCode</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">int</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">puppies_rotated</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="n">puppies</span><span class="p">,</span> <span class="n">flipCode</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">int</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="n">puppies_rotated</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="n">puppies</span><span class="p">,</span> <span class="n">flipCode</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"Sorry invalid option"</span><span class="p">)</span>        
+        
+        <span class="n">cv2</span><span class="o">.</span><span class="n">namedWindow</span><span class="p">(</span><span class="s">'flipoutput'</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">WINDOW_NORMAL</span><span class="p">)</span>
+        <span class="n">cv2</span><span class="o">.</span><span class="n">resizeWindow</span><span class="p">(</span><span class="s">'flipoutput'</span><span class="p">,</span> <span class="p">(</span><span class="mi">600</span><span class="p">,</span><span class="mi">600</span><span class="p">))</span>
+        <span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s">'flipoutput'</span><span class="p">,</span> <span class="n">puppies_rotated</span><span class="p">)</span>  
+        <span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">cv2</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Sorry invalid option"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">rotate</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">flip</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="running-script-file">Running script file</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%</span><span class="n">run</span> <span class="n">rotate_and_flip_images</span><span class="o">.</span><span class="n">py</span>
+</code></pre></div></div>
+:ET

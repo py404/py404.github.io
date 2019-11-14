@@ -1,0 +1,184 @@
+I"�7<p>You can download the jupyter notebook or the project from GitHub here:
+<a href="https://github.com/py404/computer-vision-with-python-and-opencv2/?target='_blank'">Github project link</a></p>
+
+<p>In this blog post let us look into different ways of opening and displaying images using both matplotlib and OpenCV2</p>
+
+<p>Picture used in this tutorial is downloaded from <a href="www.pexels.com">www.pexels.com</a>. I do not own the picture. Picture is available for free download and complete credits goes to Chevanon Photography. Link below.</p>
+
+<p>Credit: Photo by Chevanon Photography from Pexels</p>
+
+<p><a href="https://www.pexels.com/photo/two-yellow-labrador-retriever-puppies-1108099/?target='_blank'">PEXELS PHOTO DOWNLOAD LINK</a></p>
+
+<hr />
+<h1 id="1-matplotlib-implementation">1. Matplotlib implementation</h1>
+<h1 id="please-note-that-matplotlib-implementation-is-done-in-jupyter-notebook-for-this-blog-post">Please note that matplotlib implementation is done in jupyter notebook for this blog post.</h1>
+<h2 id="load-libraries">Load libraries</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># OpenCV2
+</span><span class="kn">import</span> <span class="nn">cv2</span>
+
+<span class="c1"># matplotlib
+</span><span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="n">mat</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">cv2</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'4.1.0'
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">mat</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'3.0.2'
+</code></pre></div></div>
+
+<hr />
+<h2 id="load-image-and-display-using-matplotlibs-imshow-method">Load image and display using matplotlib’s imshow method</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s">'puppies.jpg'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">puppies</span><span class="p">)</span>
+</code></pre></div></div>
+
+<dl class="wp-caption align" style="max-width: 600px">
+
+<dt><a href=""><img class="" src="/images/computer-vision-with-python-and-opencv/01-basics/output_7_1.png" alt="" /></a></dt>
+
+<dd></dd>
+</dl>
+
+<hr />
+<h2 id="displaying-image-as-color-image">Displaying image as COLOR IMAGE</h2>
+<p>By default matplotlib and OpenCV’s RGB order is different. This is why we need to convert original image using cv2.COLOR_BGR2RGB method.</p>
+
+<p>For this we use OpenCV2’s COLOR_BGR2RGB method to fix the colors in the picture</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">color_puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">color_puppies</span><span class="p">)</span>
+</code></pre></div></div>
+
+<dl class="wp-caption align" style="max-width: 600px">
+
+<dt><a href=""><img class="" src="/images/computer-vision-with-python-and-opencv/01-basics/output_9_1.png" alt="" /></a></dt>
+
+<dd></dd>
+</dl>
+
+<hr />
+<h2 id="displaying-image-as-black-and-white-image">Displaying image as BLACK AND WHITE IMAGE</h2>
+
+<p>For this we use OpenCV2’s COLOR_BGR2GRAY method and then use matplotlib’s cmap function</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gray_puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">gray_puppies</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s">'gray'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<dl class="wp-caption align" style="max-width: 600px">
+
+<dt><a href=""><img class="" src="/images/computer-vision-with-python-and-opencv/01-basics/output_11_1.png" alt="" /></a></dt>
+
+<dd></dd>
+</dl>
+
+<hr />
+<h1 id="2-opencv2-implementation">2. OpenCV2 implementation</h1>
+<h2 id="displaying-images-with-cv2s-built-in-imshow-method">Displaying images with CV2’s built-in “imshow” method</h2>
+
+<p>Python script implementation is below. Let’s rename our filename to basics.py</p>
+
+<p>Output displays both color and black and white images in a 600X600 windows.</p>
+
+<p>Takeaway things from basics.py script:</p>
+<ul>
+  <li>script has 2 functions</li>
+  <li>function 1: outputs color and black and white images in the same window if closed one after the other</li>
+  <li>function 2: outputs both color and black and white images in two different windows</li>
+  <li>order of function calls in the script:
+    <ul>
+      <li>
+        <ol>
+          <li>same_output_window()</li>
+        </ol>
+      </li>
+      <li>
+        <ol>
+          <li>different_output_windows()</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">cv2</span>
+
+<span class="k">def</span> <span class="nf">same_output_window</span><span class="p">():</span>
+    <span class="n">color_puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s">'puppies.jpg'</span><span class="p">)</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">namedWindow</span><span class="p">(</span><span class="s">"output"</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">WINDOW_NORMAL</span><span class="p">)</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">resizeWindow</span><span class="p">(</span><span class="s">'output'</span><span class="p">,</span> <span class="p">(</span><span class="mi">600</span><span class="p">,</span><span class="mi">600</span><span class="p">))</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s">'output'</span><span class="p">,</span> <span class="n">color_puppies</span><span class="p">)</span>  
+    <span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="n">blackandwhite_puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">color_puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">namedWindow</span><span class="p">(</span><span class="s">"output"</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">WINDOW_NORMAL</span><span class="p">)</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">resizeWindow</span><span class="p">(</span><span class="s">'output'</span><span class="p">,</span> <span class="p">(</span><span class="mi">600</span><span class="p">,</span><span class="mi">600</span><span class="p">))</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s">'output'</span><span class="p">,</span> <span class="n">blackandwhite_puppies</span><span class="p">)</span>  
+    <span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="n">cv2</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+    
+<span class="k">def</span> <span class="nf">different_output_windows</span><span class="p">():</span>
+    <span class="n">color_puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s">'puppies.jpg'</span><span class="p">)</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">namedWindow</span><span class="p">(</span><span class="s">"color"</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">WINDOW_NORMAL</span><span class="p">)</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">resizeWindow</span><span class="p">(</span><span class="s">'color'</span><span class="p">,</span> <span class="p">(</span><span class="mi">600</span><span class="p">,</span><span class="mi">600</span><span class="p">))</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s">'color'</span><span class="p">,</span> <span class="n">color_puppies</span><span class="p">)</span>  
+
+    <span class="n">blackandwhite_puppies</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">color_puppies</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2GRAY</span><span class="p">)</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">namedWindow</span><span class="p">(</span><span class="s">"blackandwhite"</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">WINDOW_NORMAL</span><span class="p">)</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">resizeWindow</span><span class="p">(</span><span class="s">'blackandwhite'</span><span class="p">,</span> <span class="p">(</span><span class="mi">600</span><span class="p">,</span><span class="mi">600</span><span class="p">))</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s">'blackandwhite'</span><span class="p">,</span> <span class="n">blackandwhite_puppies</span><span class="p">)</span>  
+    <span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="n">cv2</span><span class="o">.</span><span class="n">destroyAllWindows</span><span class="p">()</span>
+    
+<span class="n">same_output_window</span><span class="p">()</span>
+<span class="n">different_output_windows</span><span class="p">()</span></code></pre></figure>
+
+<h2 id="running-python-script-from-jupyter-notebook">Running python script from jupyter notebook</h2>
+
+<p>To run python script in jupyter, use the jupyter’s inline magic function %run to run</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%</span><span class="n">run</span> <span class="n">basics</span><span class="o">.</span><span class="n">py</span>
+</code></pre></div></div>
+
+<h3 id="output-of-the-script">Output of the script</h3>
+<p>Output of same_output_window() function that outputs loaded image with a same window name.</p>
+
+<p>Notice highlighted markers: both windows are named “output”</p>
+
+<dl class="wp-caption align" style="max-width: 900px">
+
+<dt><a href=""><img class="" src="/images/computer-vision-with-python-and-opencv/01-basics/output.png" alt="" /></a></dt>
+
+<dd></dd>
+</dl>
+
+<p>Output of same_output_window() function that outputs loaded image with a different window name for both color and black and white image.</p>
+
+<p>Notice highlighted markers: “color” window, “blackandwhite” window</p>
+
+<dl class="wp-caption align" style="max-width: 900px">
+
+<dt><a href=""><img class="" src="/images/computer-vision-with-python-and-opencv/01-basics/color_and_blackandwhite.png" alt="" /></a></dt>
+
+<dd></dd>
+</dl>
+
+:ET

@@ -1,4 +1,0 @@
-I"®<h3 id="error-outofboundsdatetime">Error: OutOfBoundsDatetime</h3>
-<p>```python
-pandas.tslib.OutOfBoundsDatetime: Out of bounds nanosecond timestamp: 2819-01-10 00:00:00</p>
-:ET

@@ -1,0 +1,50 @@
+I"<div>
+
+  <div>
+    
+    <div id="#pandas"></div>
+    <p></p>
+    
+    <h3>Pandas</h3>
+    <a name="pandas"></a>
+    
+    <article>
+        <li><font size="3"><a href="/blog/2019/07/pandas-outofbounddatetime-error">Pandas timestamp error - OutOfBoundsDatetime</a></font></li>
+    </article>
+    
+  </div>
+
+  <div>
+    
+    <div id="#python"></div>
+    <p></p>
+    
+    <h3>Python</h3>
+    <a name="python"></a>
+    
+    <article>
+        <li><font size="3"><a href="/blog/2019/07/pandas-outofbounddatetime-error">Pandas timestamp error - OutOfBoundsDatetime</a></font></li>
+    </article>
+    
+  </div>
+
+  <div>
+    
+    <div id="#Computer vision with Python and OpenCV2"></div>
+    <p></p>
+    
+    <h3>Computer vision with python and opencv2</h3>
+    <a name="Computer vision with Python and OpenCV2"></a>
+    
+    <article>
+        <li><font size="3"><a href="/blog/2019/09/computer-vision-with-python-and-opencv-part2-rotating-and-flipping-images">Computer Vision with Python and OpenCV2 (Part 2 - Rotating and flipping images)</a></font></li>
+    </article>
+    
+    <article>
+        <li><font size="3"><a href="/blog/2019/09/computer-vision-with-python-and-opencv-part1-basics">Computer Vision with Python and OpenCV2 (Part 1 - Basics)</a></font></li>
+    </article>
+    
+  </div>
+
+</div>
+:ET
