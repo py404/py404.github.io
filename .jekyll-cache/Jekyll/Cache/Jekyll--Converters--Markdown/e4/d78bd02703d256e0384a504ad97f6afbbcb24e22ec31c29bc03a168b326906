@@ -1,4 +1,4 @@
-I"<div>
+I"|<div>
 
   <div>
     
@@ -42,6 +42,20 @@
     
     <article>
         <li><font size="3"><a href="/blog/2019/09/computer-vision-with-python-and-opencv-part1-basics">Computer Vision with Python and OpenCV2 (Part 1 - Basics)</a></font></li>
+    </article>
+    
+  </div>
+
+  <div>
+    
+    <div id="#Web scraping in Python"></div>
+    <p></p>
+    
+    <h3>Web scraping in python</h3>
+    <a name="Web scraping in Python"></a>
+    
+    <article>
+        <li><font size="3"><a href="/blog/2019/11/web-scraping-and-eda-in-python-using-requests-beautifulsoup-and-pandas">Web Scraping in Python 3</a></font></li>
     </article>
     
   </div>

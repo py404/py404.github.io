@@ -1,0 +1,43 @@
+I"�
+<h1 id="web-scraping-and-basic-exploratory-data-analysis-in-python-3-using-requests-beautifulsoup-pandas-matplotlib-seaborn">Web Scraping and Basic Exploratory Data Analysis in Python 3 using Requests, BeautifulSoup, Pandas, Matplotlib, Seaborn</h1>
+
+<h2 id="click-here-to-view-jupyter-notebook"><a href="https://nbviewer.jupyter.org/github/py404/Web-Scraping-and-EDA-in-Python3/blob/master/Web_scraping_with_BeautifulSoup.ipynb/?target=_blank">Click here to view jupyter notebook</a></h2>
+
+<p>In this jupyter notebook I documented web scraping and exploratory data analysis using Python 3.</p>
+
+<p>The process is as follows:</p>
+<ol>
+  <li>use Python’s requests and bs4 libraries to scrape a webpage</li>
+  <li>load the scraped data into a pandas dataframe</li>
+  <li>do some basic exploratory data anlaysis on the dataframe</li>
+  <li>basic visualization</li>
+</ol>
+
+<p>For this article’s purpose I scraped population data of New Zealand as of June 30, 2018 from <a href="http://citypopulation.de">http://citypopulation.de</a> website.</p>
+
+<h2 id="source">Source:</h2>
+<h1 id="source-1">Source:</h1>
+<h2 id="thomas-brinkhoff-city-population-httpwwwcitypopulationde">Thomas Brinkhoff: City Population, http://www.citypopulation.de</h2>
+
+<p><strong><em>Please note there might be some policies and rules for a website for using the data. So before you do the web scraping please do not forget to read the data usage policies.</em></strong></p>
+
+<p><a href="http://citypopulation.de/termsofuse.html">Data use policy:</a> (DATA -&gt; Population Data)</p>
+
+<h3 id="the-data-that-i-will-be-extracting-in-the-jupyter-notebook-is-population-data-for-oceania---new-zealand-httpcitypopulationdeennewzealand">The data that I will be extracting in the jupyter notebook is population data for Oceania -&gt; NEW ZEALAND http://citypopulation.de/en/newzealand/</h3>
+<ul>
+  <li>I am only scraping data for North and South Islands (excluded Chatham islands)</li>
+  <li>North island: <a href="http://citypopulation.de/en/newzealand/northisland/">http://citypopulation.de/en/newzealand/northisland/</a></li>
+  <li>South island: <a href="http://citypopulation.de/en/newzealand/southisland/">http://citypopulation.de/en/newzealand/southisland/</a></li>
+</ul>
+
+<h1 id="final-note">Final note</h1>
+
+<p>Please note that I documented this jupyter notebook for a simple way to explain how useful it is using requests and BeautifulSoup (bs4) libraries to scrape website data .</p>
+
+<p>Feel free to do your own exploration and analysis on the data that is scraped.</p>
+
+<p>I hope that this piece of work will give readers some basic understanding of web scraping and intuition behind the analysis, which is:</p>
+<ul>
+  <li>from scraping data to end-to-end data analysis (if I might say in simple words or may be not)</li>
+</ul>
+:ET
