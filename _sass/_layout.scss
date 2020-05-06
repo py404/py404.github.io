@@ -168,7 +168,8 @@ ul.listing li.listing-seperator {
 	padding-top: 15px;
 	font-weight: bold;
 	font-family: 'Titillium Web', sans-serif;
-	font-size: 1.17em;
+    font-size: 1.17em;
+    color: orangered;
 }
 
 ul.listing li.listing-item time {
@@ -180,8 +181,8 @@ ul.listing li.listing-item time {
 }
 
 ul.listing li.listing-item a {
-	color: $blue-color-dark;
-	font-weight: 400;
+	color: blue;
+	font-weight: 600;
 	font-family: 'Titillium Web', sans-serif;
 }
 

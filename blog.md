@@ -12,6 +12,7 @@ Find all my blog posts below. Or if you would like to view blog posts by categor
   {% if year != y %}
     {% assign year = y %}
     <li class="listing-seperator">{{ y }}</li>
+    <hr style="height:3px; border:none; color:#333; background-color:#333;" >
   {% endif %}
   <li class="listing-item">
     <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>

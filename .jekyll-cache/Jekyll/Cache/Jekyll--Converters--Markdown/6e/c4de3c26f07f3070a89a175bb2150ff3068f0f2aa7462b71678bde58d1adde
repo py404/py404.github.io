@@ -1,0 +1,38 @@
+I"Å<p>Find all my blog posts below. Or if you would like to view blog posts by categories check out here: <a href="/categories/">here</a>.</p>
+
+<ul class="listing">
+
+  
+  
+    
+    <li class="listing-seperator">2019</li>
+    <hr style="height:3px; border: red; color:#333; background-color:#333;" />
+  
+  <li class="listing-item">
+    <time datetime="2019-11-27">2019-11-27</time>
+    <a href="/blog/2019/11/web-scraping-and-eda-in-python-using-requests-beautifulsoup-and-pandas" title="Web Scraping in Python 3">Web Scraping in Python 3</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2019-09-01">2019-09-01</time>
+    <a href="/blog/2019/09/computer-vision-with-python-and-opencv-part2-rotating-and-flipping-images" title="Computer Vision with Python and OpenCV2 (Part 2 - Rotating and flipping images)">Computer Vision with Python and OpenCV2 (Part 2 - Rotating and flipping images)</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2019-09-01">2019-09-01</time>
+    <a href="/blog/2019/09/computer-vision-with-python-and-opencv-part1-basics" title="Computer Vision with Python and OpenCV2 (Part 1 - Basics)">Computer Vision with Python and OpenCV2 (Part 1 - Basics)</a>
+  </li>
+
+  
+  
+  <li class="listing-item">
+    <time datetime="2019-07-11">2019-07-11</time>
+    <a href="/blog/2019/07/pandas-outofbounddatetime-error" title="Pandas timestamp error - OutOfBoundsDatetime">Pandas timestamp error - OutOfBoundsDatetime</a>
+  </li>
+
+</ul>
+:ET
