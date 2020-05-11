@@ -3,7 +3,7 @@ layout: post
 title:  Web Scraping in Python 3
 date: 2019-11-27
 description: Web Scraping and EDA in Python 3 using Requests, BeautifulSoup, Pandas, Matplotlib, Seaborn
-categories: [webscraping, python, beautifulsoup, requests]
+categories: [webscraping (beautifulsoup, requests), python]
 ---
 
 # Web Scraping and Basic Exploratory Data Analysis in Python 3 using Requests, BeautifulSoup, Pandas, Matplotlib, Seaborn

@@ -3,7 +3,7 @@ layout: post
 title:  Computer Vision with Python and OpenCV2 (Part 2 - Rotating and flipping images)
 date: 2019-09-01
 description: Part 2 - Rotating and flipping images
-categories: [computer vision, python, opencv2]
+categories: [computer vision (opencv2), python]
 ---
 
 You can download the jupyter notebook or the project from GitHub here:
