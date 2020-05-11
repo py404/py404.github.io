@@ -14,9 +14,24 @@ Find all my blog posts below. Or if you would like to view blog posts by categor
     <li class="listing-seperator">{{ y }}</li>
     <hr style="height:3px; border:none; color:#333; background-color:#333;" >
   {% endif %}
+  <style type="text/css">
+    a {text-decoration: none;}
+    a:hover {text-decoration: underline; color: hotpink;}
+    a:visited {color: green;}
+    a:active {color: blue;}
+    b {font-size: 85%;}
+  </style>
   <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+    <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" style="fontsize: 3px; color: black;">{{ post.title }}</a>
+    <strong style="font-size:100%; font-family: 'Titillium Web', sans-serif; float:right; padding-right: .5em">{{ post.date | date:"%-d %b %Y" }}</strong>
+    <br>
+    <b>Category: 
+    {% for category in post.categories %}
+    <a href="/categories/#{{ category }}" style="fontsize: 3px; color: dodgerblue;">{{ category }}</a>
+    {% endfor %}
+    </b>
+    <!-- <time datetime="{{ post.date | date:"%-d %B %Y" }}">{{ post.date | date:"%-d %B %Y" }}</time> -->
+    <hr style="opacity: 0.4;">
   </li>
 {% endfor %}
 </ul>
