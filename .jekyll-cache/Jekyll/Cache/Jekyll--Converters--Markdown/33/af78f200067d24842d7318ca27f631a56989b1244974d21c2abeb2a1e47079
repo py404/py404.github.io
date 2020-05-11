@@ -1,4 +1,4 @@
-I"—<p>Find all my blog posts below. Or if you would like to view blog posts by categories check out here: <a href="/categories/">here</a>.</p>
+I"—<p>Find all my blog posts below. Or if you would like to view blog posts by categories check out here: <a href="/categories/">here</a>.</p>
 
 <ul class="listing">
 
@@ -13,7 +13,7 @@
     a:hover {text-decoration: underline; color: hotpink;}
     a:visited {color: green;}
     a:active {color: blue;}
-    b {font-size: 12px;}
+    b {font-size: 85%;}
   </style>
   <li class="listing-item">
     <a href="/blog/2019/11/web-scraping-and-eda-in-python-using-requests-beautifulsoup-and-pandas" title="Web Scraping in Python 3" style="fontsize: 3px; color: black;">Web Scraping in Python 3</a>
@@ -21,7 +21,9 @@
     <br />
     <b>Category: 
     
-    <a href="/categories/#Web scraping in Python" style="fontsize: 3px; color: dodgerblue;">Web scraping in Python</a>
+    <a href="/categories/#webscraping (beautifulsoup &amp; requests)" style="fontsize: 3px; color: dodgerblue;">webscraping (beautifulsoup &amp; requests)</a>
+    
+    <a href="/categories/#python" style="fontsize: 3px; color: dodgerblue;">python</a>
     
     </b>
     <!-- <time datetime="27 November 2019">27 November 2019</time> -->
@@ -35,7 +37,7 @@
     a:hover {text-decoration: underline; color: hotpink;}
     a:visited {color: green;}
     a:active {color: blue;}
-    b {font-size: 12px;}
+    b {font-size: 85%;}
   </style>
   <li class="listing-item">
     <a href="/blog/2019/09/computer-vision-with-python-and-opencv-part2-rotating-and-flipping-images" title="Computer Vision with Python and OpenCV2 (Part 2 - Rotating and flipping images)" style="fontsize: 3px; color: black;">Computer Vision with Python and OpenCV2 (Part 2 - Rotating and flipping images)</a>
@@ -43,7 +45,9 @@
     <br />
     <b>Category: 
     
-    <a href="/categories/#Computer vision with Python and OpenCV2" style="fontsize: 3px; color: dodgerblue;">Computer vision with Python and OpenCV2</a>
+    <a href="/categories/#computer vision (opencv2)" style="fontsize: 3px; color: dodgerblue;">computer vision (opencv2)</a>
+    
+    <a href="/categories/#python" style="fontsize: 3px; color: dodgerblue;">python</a>
     
     </b>
     <!-- <time datetime="1 September 2019">1 September 2019</time> -->
@@ -57,7 +61,7 @@
     a:hover {text-decoration: underline; color: hotpink;}
     a:visited {color: green;}
     a:active {color: blue;}
-    b {font-size: 12px;}
+    b {font-size: 85%;}
   </style>
   <li class="listing-item">
     <a href="/blog/2019/09/computer-vision-with-python-and-opencv-part1-basics" title="Computer Vision with Python and OpenCV2 (Part 1 - Basics)" style="fontsize: 3px; color: black;">Computer Vision with Python and OpenCV2 (Part 1 - Basics)</a>
@@ -65,7 +69,9 @@
     <br />
     <b>Category: 
     
-    <a href="/categories/#Computer vision with Python and OpenCV2" style="fontsize: 3px; color: dodgerblue;">Computer vision with Python and OpenCV2</a>
+    <a href="/categories/#computer vision (opencv2)" style="fontsize: 3px; color: dodgerblue;">computer vision (opencv2)</a>
+    
+    <a href="/categories/#python" style="fontsize: 3px; color: dodgerblue;">python</a>
     
     </b>
     <!-- <time datetime="1 September 2019">1 September 2019</time> -->
@@ -79,7 +85,7 @@
     a:hover {text-decoration: underline; color: hotpink;}
     a:visited {color: green;}
     a:active {color: blue;}
-    b {font-size: 12px;}
+    b {font-size: 85%;}
   </style>
   <li class="listing-item">
     <a href="/blog/2019/07/pandas-outofbounddatetime-error" title="Pandas timestamp error - OutOfBoundsDatetime" style="fontsize: 3px; color: black;">Pandas timestamp error - OutOfBoundsDatetime</a>

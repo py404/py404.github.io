@@ -1,0 +1,76 @@
+I"	<div>
+
+  <div>
+    
+    <div id="#pandas"></div>
+    <p></p>
+    
+    <h3>Pandas</h3>
+    <a name="pandas"></a>
+    
+    <article>
+        <li><font size="3"><a href="/blog/2019/07/pandas-outofbounddatetime-error">Pandas timestamp error - OutOfBoundsDatetime</a></font></li>
+    </article>
+    
+  </div>
+
+  <div>
+    
+    <div id="#python"></div>
+    <p></p>
+    
+    <h3>Python</h3>
+    <a name="python"></a>
+    
+    <article>
+        <li><font size="3"><a href="/blog/2019/11/web-scraping-and-eda-in-python-using-requests-beautifulsoup-and-pandas">Web Scraping in Python 3</a></font></li>
+    </article>
+    
+    <article>
+        <li><font size="3"><a href="/blog/2019/09/computer-vision-with-python-and-opencv-part2-rotating-and-flipping-images">Computer Vision with Python and OpenCV2 (Part 2 - Rotating and flipping images)</a></font></li>
+    </article>
+    
+    <article>
+        <li><font size="3"><a href="/blog/2019/09/computer-vision-with-python-and-opencv-part1-basics">Computer Vision with Python and OpenCV2 (Part 1 - Basics)</a></font></li>
+    </article>
+    
+    <article>
+        <li><font size="3"><a href="/blog/2019/07/pandas-outofbounddatetime-error">Pandas timestamp error - OutOfBoundsDatetime</a></font></li>
+    </article>
+    
+  </div>
+
+  <div>
+    
+    <div id="#computer vision (opencv2)"></div>
+    <p></p>
+    
+    <h3>Computer vision (opencv2)</h3>
+    <a name="computer vision (opencv2)"></a>
+    
+    <article>
+        <li><font size="3"><a href="/blog/2019/09/computer-vision-with-python-and-opencv-part2-rotating-and-flipping-images">Computer Vision with Python and OpenCV2 (Part 2 - Rotating and flipping images)</a></font></li>
+    </article>
+    
+    <article>
+        <li><font size="3"><a href="/blog/2019/09/computer-vision-with-python-and-opencv-part1-basics">Computer Vision with Python and OpenCV2 (Part 1 - Basics)</a></font></li>
+    </article>
+    
+  </div>
+
+  <div>
+    
+    <div id="#webscraping (beautifulsoup requests)"></div>
+    <p></p>
+    
+    <h3>Webscraping (beautifulsoup requests)</h3>
+    <a name="webscraping (beautifulsoup requests)"></a>
+    
+    <article>
+        <li><font size="3"><a href="/blog/2019/11/web-scraping-and-eda-in-python-using-requests-beautifulsoup-and-pandas">Web Scraping in Python 3</a></font></li>
+    </article>
+    
+  </div>
+
+</div>
+:ET

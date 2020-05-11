@@ -1,4 +1,4 @@
-I"|<div>
+I"%	<div>
 
   <div>
     
@@ -23,6 +23,18 @@
     <a name="python"></a>
     
     <article>
+        <li><font size="3"><a href="/blog/2019/11/web-scraping-and-eda-in-python-using-requests-beautifulsoup-and-pandas">Web Scraping in Python 3</a></font></li>
+    </article>
+    
+    <article>
+        <li><font size="3"><a href="/blog/2019/09/computer-vision-with-python-and-opencv-part2-rotating-and-flipping-images">Computer Vision with Python and OpenCV2 (Part 2 - Rotating and flipping images)</a></font></li>
+    </article>
+    
+    <article>
+        <li><font size="3"><a href="/blog/2019/09/computer-vision-with-python-and-opencv-part1-basics">Computer Vision with Python and OpenCV2 (Part 1 - Basics)</a></font></li>
+    </article>
+    
+    <article>
         <li><font size="3"><a href="/blog/2019/07/pandas-outofbounddatetime-error">Pandas timestamp error - OutOfBoundsDatetime</a></font></li>
     </article>
     
@@ -30,11 +42,11 @@
 
   <div>
     
-    <div id="#Computer vision with Python and OpenCV2"></div>
+    <div id="#computer vision (opencv2)"></div>
     <p></p>
     
-    <h3>Computer vision with python and opencv2</h3>
-    <a name="Computer vision with Python and OpenCV2"></a>
+    <h3>Computer vision (opencv2)</h3>
+    <a name="computer vision (opencv2)"></a>
     
     <article>
         <li><font size="3"><a href="/blog/2019/09/computer-vision-with-python-and-opencv-part2-rotating-and-flipping-images">Computer Vision with Python and OpenCV2 (Part 2 - Rotating and flipping images)</a></font></li>
@@ -48,11 +60,11 @@
 
   <div>
     
-    <div id="#Web scraping in Python"></div>
+    <div id="#webscraping (beautifulsoup &amp; requests)"></div>
     <p></p>
     
-    <h3>Web scraping in python</h3>
-    <a name="Web scraping in Python"></a>
+    <h3>Webscraping (beautifulsoup &amp; requests)</h3>
+    <a name="webscraping (beautifulsoup &amp; requests)"></a>
     
     <article>
         <li><font size="3"><a href="/blog/2019/11/web-scraping-and-eda-in-python-using-requests-beautifulsoup-and-pandas">Web Scraping in Python 3</a></font></li>

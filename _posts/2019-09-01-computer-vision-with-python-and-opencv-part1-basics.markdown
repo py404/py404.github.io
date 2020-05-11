@@ -3,7 +3,7 @@ layout: post
 title:  Computer Vision with Python and OpenCV2 (Part 1 - Basics)
 date: 2019-09-01
 description: Part 1 - Basics
-categories: computer vision (opencv2), python]
+categories: [computer vision (opencv2), python]
 ---
 
 You can download the jupyter notebook or the project from GitHub here:

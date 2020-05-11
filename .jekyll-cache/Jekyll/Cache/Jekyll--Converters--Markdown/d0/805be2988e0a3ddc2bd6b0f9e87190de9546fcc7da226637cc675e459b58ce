@@ -1,4 +1,4 @@
-I";<p>Find all my blog posts below. Or if you would like to view blog posts by categories check out here: <a href="/categories/">here</a>.</p>
+I"×<p>Find all my blog posts below. Or if you would like to view blog posts by categories check out here: <a href="/categories/">here</a>.</p>
 
 <ul class="listing">
 
@@ -13,16 +13,21 @@
     a:hover {text-decoration: underline; color: hotpink;}
     a:visited {color: green;}
     a:active {color: blue;}
+    b {font-size: 85%;}
   </style>
   <li class="listing-item">
     <a href="/blog/2019/11/web-scraping-and-eda-in-python-using-requests-beautifulsoup-and-pandas" title="Web Scraping in Python 3" style="fontsize: 3px; color: black;">Web Scraping in Python 3</a>
     <strong style="font-size:100%; font-family: 'Titillium Web', sans-serif; float:right; padding-right: .5em">27 Nov 2019</strong>
     <br />
-    <ul>Category: 
+    <b>Category: 
     
-    <a href="/categories/#Web scraping in Python" style="fontsize: 3px; color: dodgerblue;">Web scraping in Python</a>
+    <a href="/categories/#webscraping(beautifulsoup" style="fontsize: 3px; color: dodgerblue;">webscraping(beautifulsoup</a>
     
-    </ul>
+    <a href="/categories/#requests)" style="fontsize: 3px; color: dodgerblue;">requests)</a>
+    
+    <a href="/categories/#python" style="fontsize: 3px; color: dodgerblue;">python</a>
+    
+    </b>
     <!-- <time datetime="27 November 2019">27 November 2019</time> -->
     <hr style="opacity: 0.4;" />
   </li>
@@ -34,16 +39,19 @@
     a:hover {text-decoration: underline; color: hotpink;}
     a:visited {color: green;}
     a:active {color: blue;}
+    b {font-size: 85%;}
   </style>
   <li class="listing-item">
     <a href="/blog/2019/09/computer-vision-with-python-and-opencv-part2-rotating-and-flipping-images" title="Computer Vision with Python and OpenCV2 (Part 2 - Rotating and flipping images)" style="fontsize: 3px; color: black;">Computer Vision with Python and OpenCV2 (Part 2 - Rotating and flipping images)</a>
     <strong style="font-size:100%; font-family: 'Titillium Web', sans-serif; float:right; padding-right: .5em">1 Sep 2019</strong>
     <br />
-    <ul>Category: 
+    <b>Category: 
     
-    <a href="/categories/#Computer vision with Python and OpenCV2" style="fontsize: 3px; color: dodgerblue;">Computer vision with Python and OpenCV2</a>
+    <a href="/categories/#computer vision (opencv2)" style="fontsize: 3px; color: dodgerblue;">computer vision (opencv2)</a>
     
-    </ul>
+    <a href="/categories/#python" style="fontsize: 3px; color: dodgerblue;">python</a>
+    
+    </b>
     <!-- <time datetime="1 September 2019">1 September 2019</time> -->
     <hr style="opacity: 0.4;" />
   </li>
@@ -55,16 +63,19 @@
     a:hover {text-decoration: underline; color: hotpink;}
     a:visited {color: green;}
     a:active {color: blue;}
+    b {font-size: 85%;}
   </style>
   <li class="listing-item">
     <a href="/blog/2019/09/computer-vision-with-python-and-opencv-part1-basics" title="Computer Vision with Python and OpenCV2 (Part 1 - Basics)" style="fontsize: 3px; color: black;">Computer Vision with Python and OpenCV2 (Part 1 - Basics)</a>
     <strong style="font-size:100%; font-family: 'Titillium Web', sans-serif; float:right; padding-right: .5em">1 Sep 2019</strong>
     <br />
-    <ul>Category: 
+    <b>Category: 
     
-    <a href="/categories/#Computer vision with Python and OpenCV2" style="fontsize: 3px; color: dodgerblue;">Computer vision with Python and OpenCV2</a>
+    <a href="/categories/#computer vision (opencv2)" style="fontsize: 3px; color: dodgerblue;">computer vision (opencv2)</a>
     
-    </ul>
+    <a href="/categories/#python" style="fontsize: 3px; color: dodgerblue;">python</a>
+    
+    </b>
     <!-- <time datetime="1 September 2019">1 September 2019</time> -->
     <hr style="opacity: 0.4;" />
   </li>
@@ -76,18 +87,19 @@
     a:hover {text-decoration: underline; color: hotpink;}
     a:visited {color: green;}
     a:active {color: blue;}
+    b {font-size: 85%;}
   </style>
   <li class="listing-item">
     <a href="/blog/2019/07/pandas-outofbounddatetime-error" title="Pandas timestamp error - OutOfBoundsDatetime" style="fontsize: 3px; color: black;">Pandas timestamp error - OutOfBoundsDatetime</a>
     <strong style="font-size:100%; font-family: 'Titillium Web', sans-serif; float:right; padding-right: .5em">11 Jul 2019</strong>
     <br />
-    <ul>Category: 
+    <b>Category: 
     
     <a href="/categories/#pandas" style="fontsize: 3px; color: dodgerblue;">pandas</a>
     
     <a href="/categories/#python" style="fontsize: 3px; color: dodgerblue;">python</a>
     
-    </ul>
+    </b>
     <!-- <time datetime="11 July 2019">11 July 2019</time> -->
     <hr style="opacity: 0.4;" />
   </li>
