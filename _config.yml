@@ -3,21 +3,77 @@ title: Phani Atmakur
 general_email: phani@kernalinc.com
 
 description: > # this means to ignore newlines until "baseurl:"
-  I have a strong passion for technology. I blog mostly about Python, R, Django, Machine Learning, Computer Vision, Data Science, Programming (C# & Python), Big Data and lot more.
+  I am a Software Developer and a Data Scientist living in New Zealand. I currently work at Institute of Environmental Science & Research (ESR) in Christchurch.
 
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: ""
+repository: py404/py404.github.io
 
 url: "https://py404.github.io" # the base hostname & protocol for your site
 
-github_username: py404
-linkedin_username: phaniatmakur
-# feel free to add other links here; you will have to add the SVG icon in _layouts/footer.html
 
-# Build settings
-markdown: kramdown
+### Plugins ###
+plugins:
+  - jemoji
 
-kramdown:
-  math_engine: mathjax
+### Pagination
 
-# Other options
-permalink: blog/:year/:month/:title
+### Navbar Settings ###
+nav_exclude: # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+  - documentation/partials/** # For Documentation Only
+
+### Author Info ###
+author:
+  name: Phani Atmakur
+  image: avatar/phani_avatar2.jpg
+  email: phani@kernalinc.com
+  github: py404
+  linkedin: phaniatmakur
+  instagram: phani_reddy21
+
+### Posts ###
+permalink: /blog/:title
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+  elements: # For Documentation Only
+    output: true # For Documentation Only
+
+### Disqus ###
+disqus: your-short-name-disqus # Your website Shortname on disqus
+
+### Analytics ###
+analytics:
+  enabled: false # Set true to enable analytics
+  google:
+    tracking_id: your-google-tracking-id
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope: # For Documentation Only
+      path: "" # For Documentation Only
+      type: "elements" # For Documentation Only
+    values: # For Documentation Only
+      layout: "element" # For Documentation Only
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false # Set to true to enable disqus comments
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"

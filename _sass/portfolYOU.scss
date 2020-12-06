@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+// Custom Fonts
+// @import url('https://fonts.googleapis.com/css?family=Poppins');
+// @import url("https://fonts.googleapis.com/css?family=Ubuntu");
+// @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "variables", "404", "autumn", "base", "blog", "footer", "landing",
+  "navbar", "projects", "skills", "timeline";
