@@ -1,0 +1,43 @@
+- name: Python
+  percentage: 90
+  color: success
+
+- name: R
+  percentage: 80
+  color: 
+
+- name: Flask
+  percentage: 85
+  color: danger
+  
+- name: Django
+  percentage: 85
+  color: warning
+
+- name: HTML5/CSS3/<br>JavaScript
+  percentage: 75
+  color: info
+
+- name: Dart & Flutter
+  percentage: 70
+  color: dark
+
+- name: React & Redux
+  percentage: 70
+  color: success
+
+- name: C#
+  percentage: 65
+  color: 
+
+- name: Java
+  percentage: 65
+  color: danger
+
+- name: Materialize CSS
+  percentage: 75
+  color: info
+
+- name: Bootstrap CSS
+  percentage: 75
+  color: warning

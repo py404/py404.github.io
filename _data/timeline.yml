@@ -1,0 +1,41 @@
+- title: Scientist (Data & Analytics) & Python Developer<br>Institute of Environmental Science & Research (ESR)<br>Christchurch, New Zealand
+  from: July 2018
+  to: Present
+  description: 
+    • EDA, ML modelling and deployements in Python and R.<br>
+    • Developed dashboards in Dash, Shiny, and Tableau.<br>
+    •	Developed a smartphone app in Flutter & Dart for a research project.<br>
+    •	Developed a react app for The New Zealand Food Safety Science & Research Centre (NZFSSRC).<br>
+    •	Implement REST APIs for consumption in web, smartphone and and machine learning apps.<br>
+    •	Deploy web apps to Azure.<br>
+
+- title: BI & Application Developer<br>Canterbury Health Labs<br>Christchurch, New Zealand
+  from: July 2018
+  to: June 2016
+  description: 
+    •	Performed data analysis, developed Tableau reports and dashboards.<br>
+    •	Developed SSRS reports for laboratory samples collection metrics.<br>
+    •	Developed SSRS reports for laboratory help desk metrics.<br>
+    •	Developed a barcode label printing in Python that connects to laboratory database and prints a barcode with identifiers on it. The purpose is to use the barcode labels for sample tubes, documents and many other uses.<br>
+    • Deveoped a web application in C# Web API and Python that downloads digital medical laboratory form from other medical laboratories, adds a digital barcode on top of the downloaded image using Python’s PILLOW and OpenCV libraries.<br>
+
+
+- title: Software & Systems Engineer<br>Aqualinc Research Ltd<br>Christchurch, New Zealand
+  from: October 2015
+  to: June 2016
+  description:
+    •	I was the only IT engineer (both Systems and Software) at the company.<br>
+    •	Supported around 30 staff with IT related issues and maintained the internal IT infrastructure.<br>
+    •	Managed Active Directory, windows servers, SQL Server and MySQL databases.<br>
+    •	Managed and supported in-house developed windows applications, printers.<br>
+    •	Developed in-house windows applications using C# and SQL Server or MySQL database backends.<br>
+    •	Developed web application <a href="http://mycatchment.info">MyCatchment</a> that is used by the local farmers in New Zealand to find out information for irrigation planning, consenting and design.<br>
+
+- title: Systems Support<br>Canterbury District Health Board<br>Christchurch, New Zealand
+  from: October 2015
+  to: Jan 2014
+  description:
+    •	Active Directory, packaging MSI and App-V applications for Windows and Virtual infrastructure.<br>
+    •	Managing Microsoft Windows Servers and SQL databases.<br>
+    •	Involved in supporting crucial laboratory and clinical applications as well.<br>
+    •	Developed a visitor management system for laboratory.<br>

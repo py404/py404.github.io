@@ -1,0 +1,51 @@
+- name: Jupyter notebooks
+  percentage: 85
+  color: success
+  
+- name: Scikit-Learn
+  percentage: 85
+  color: 
+
+- name: Tensorflow
+  percentage: 70
+  color: danger
+
+- name: PyTorch
+  percentage: 70
+  color: warning
+
+- name: Open CV
+  percentage: 70
+  color: info
+
+- name: Matplotlib
+  percentage: 80
+  color: dark
+
+- name: Seaborn
+  percentage: 80
+  color: success
+
+- name: Plotly
+  percentage: 75
+  color: 
+
+- name: BeautifulSoup &<br>Requests
+  percentage: 75
+  color: danger
+
+- name: Shiny &<br>ShinyDashboard
+  percentage: 80
+  color: info
+
+- name: ggplot2
+  percentage: 70
+  color: warning
+
+- name: Tableau
+  percentage: 75
+  color: dark
+  
+- name: Power BI
+  percentage: 75
+  color: success

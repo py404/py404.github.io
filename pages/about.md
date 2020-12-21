@@ -9,15 +9,15 @@ weight: 2
 
 Hello there! :wave:.
 
-My name is **{{ site.author.name }}**. I am a Scientist (Data and Analytics) and a Software Developer (both :desktop_computer: and :iphone:) working at Institute of Environmental Science & Research (ESR) in Christchurch, New Zealand :new_zealand:. My work if focused around environment, public health and science.
+My name is **{{ site.author.name }}**. I am a Scientist (Data and Analytics) and a Software Developer (both :desktop_computer: and :iphone:) working at Institute of Environmental Science & Research (ESR) in Christchurch, New Zealand :new_zealand:. My current work is focused in environment, public health and science.
 
-I have a strong passion for technology. I blog mostly about Python, R, Django, Machine Learning, Computer Vision, Data Science, Software Development, Big Data and lot more. Python and R are my go to tools for exploratory data analysis (EDA), statistics and machine learning. I blog and pin them down here in chronological order. Feel free to read a bit more about me.
-
-The toolset I use is quite an array of tech like Python, R, Jupyter notebooks, RShiny, SQL (SQL Server, Postgres, MySQL), NoSQL (MongoDB, LiteDB), Flask, Django, React JS, Git & GitHub, Docker, Kubernetes, Azure, Azure DevOps, PowerBI, Tableau for my day to day tasks and other workflows.
+I have a strong passion for technology. I blog mostly about Web development and Data Science in general. Python and R are my go to tools for exploratory data analysis (EDA), statistics and machine learning. I blog and pin them in chronological order in "Blog" tab. The toolset I use is quite an array of tech like Python, R, Jupyter notebooks, RShiny, SQL (SQL Server, Postgres, MySQL), NoSQL (MongoDB, [LiteDB](https://www.litedb.org/), Flask, Django, React JS, Git & GitHub, Docker, Kubernetes, Azure, Azure DevOps, PowerBI, Tableau for my day to day tasks and other workflows.
 
 A list of my projects are under the Projects tab. You may also check out my GitHub profile.
 
-To get a better insight on my career so far, check out my curriculum vitae.
+To get a better insight on my career so far, check out my curriculum vitae (CV tab).
+
+Feel free to read a bit more about me down below.
 
 <div class="row">
 {% include about/skills.html title="Programming" source=site.data.programming-skills %}

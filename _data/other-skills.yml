@@ -1,0 +1,27 @@
+- name: Git & Github
+  percentage: 80
+  color: success
+
+- name: Docker
+  percentage: 70
+  color: 
+
+- name: Azure
+  percentage: 70
+  color: danger
+
+- name: Azure DevOps
+  percentage: 70
+  color: warning
+  
+- name: Kubernetes
+  percentage: 70
+  color: info
+  
+- name: Powershell
+  percentage: 75
+  color: dark
+  
+- name: Bash
+  percentage: 75
+  color: 

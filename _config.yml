@@ -3,7 +3,7 @@ title: Phani Atmakur
 general_email: phani@kernalinc.com
 
 description: > # this means to ignore newlines until "baseurl:"
-  I am a Software Developer and a Data Scientist living in New Zealand. I currently work at Institute of Environmental Science & Research (ESR) in Christchurch.
+  I am a Python Developer and a Data Scientist living in New Zealand. I currently work at Institute of Environmental Science & Research (ESR) in Christchurch.
 
 baseurl: ""
 repository: py404/py404.github.io
@@ -27,7 +27,7 @@ nav_exclude: # The following paths are excluded from navbar
 ### Author Info ###
 author:
   name: Phani Atmakur
-  image: avatar/phani_avatar2.jpg
+  image: avatar/phani_avatar.jpg
   email: phani@kernalinc.com
   github: py404
   linkedin: phaniatmakur
@@ -49,9 +49,9 @@ disqus: your-short-name-disqus # Your website Shortname on disqus
 
 ### Analytics ###
 analytics:
-  enabled: false # Set true to enable analytics
+  enabled: true # Set true to enable analytics
   google:
-    tracking_id: your-google-tracking-id
+    tracking_id: UA-43896612-1
 
 ### Defaults for collections ###
 defaults:
