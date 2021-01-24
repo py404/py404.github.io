@@ -1,23 +1,22 @@
-- title: Scientist (Data & Analytics) & Python Developer<br>Institute of Environmental Science & Research (ESR)<br>Christchurch, New Zealand
+- title: Scientist (Data & Analytics) & Software Developer<br>Institute of Environmental Science & Research (ESR)<br>Christchurch, New Zealand
   from: July 2018
   to: Present
   description: 
-    • EDA, ML modelling and deployements in Python and R.<br>
-    • Developed dashboards in Dash, Shiny, and Tableau.<br>
-    •	Developed a smartphone app in Flutter & Dart for a research project.<br>
-    •	Developed a react app for The New Zealand Food Safety Science & Research Centre (NZFSSRC).<br>
-    •	Implement REST APIs for consumption in web, smartphone and and machine learning apps.<br>
-    •	Deploy web apps to Azure.<br>
+    • Machine learning - Numpy, Pandas, Matplotlib, Seaborn, Plotly, Altair, Scikit-learn, PyTorch, Tensorflow <br>
+    • Software development - Python, React JS, Flask, Django, Flutter & Dart, C#, HTML, CSS, JavaScript, jQuery <br>
+    • Analytics & dashboards - Plotly Dash, Shiny, Tableau and Power BI <br>
+    • Container deployments - Docker, Kubernetes and Singularity <br>
+    •	App deployments - Azure DevOps, Azure AKS platform <br>
+    • Databases - SQL Server, PostgreSQL, Mongo DB, Azure Comsos DB
 
-- title: BI & Application Developer<br>Canterbury Health Labs<br>Christchurch, New Zealand
+- title: Python Developer & Systems Analyst<br>Canterbury Health Labs<br>Christchurch, New Zealand
   from: July 2018
   to: June 2016
   description: 
-    •	Performed data analysis, developed Tableau reports and dashboards.<br>
-    •	Developed SSRS reports for laboratory samples collection metrics.<br>
-    •	Developed SSRS reports for laboratory help desk metrics.<br>
-    •	Developed a barcode label printing in Python that connects to laboratory database and prints a barcode with identifiers on it. The purpose is to use the barcode labels for sample tubes, documents and many other uses.<br>
-    • Deveoped a web application in C# Web API and Python that downloads digital medical laboratory form from other medical laboratories, adds a digital barcode on top of the downloaded image using Python’s PILLOW and OpenCV libraries.<br>
+    •	Analytics & dashboards - Tableau, SSRS reports, SSIS <br>
+    •	Software development - Python, Flask, Django, C#, JavaScript, jQuery, Chart JS <br>
+    • Databases - Oracle 10g, SQL Server <br>
+    • Systems administration - Windows Server 2012, IBM AIX, Linux, Shell Scripting
 
 
 - title: Software & Systems Engineer<br>Aqualinc Research Ltd<br>Christchurch, New Zealand
