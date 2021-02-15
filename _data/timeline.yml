@@ -1,6 +1,11 @@
+- title: Research Informatician<br>Institute of Environmental Science & Research (ESR)<br>Christchurch, New Zealand
+  from: Feb 2021
+  to: Present
+  description: 
+
 - title: Scientist (Data & Analytics) & Software Developer<br>Institute of Environmental Science & Research (ESR)<br>Christchurch, New Zealand
   from: July 2018
-  to: Present
+  to: Feb 2021
   description: 
     • Machine learning - Numpy, Pandas, Matplotlib, Seaborn, Plotly, Altair, Scikit-learn, PyTorch, Tensorflow <br>
     • Software development - Python, React JS, Flask, Django, Flutter & Dart, C#, HTML, CSS, JavaScript, jQuery <br>
@@ -9,7 +14,7 @@
     •	App deployments - Azure DevOps, Azure AKS platform <br>
     • Databases - SQL Server, PostgreSQL, Mongo DB, Azure Comsos DB
 
-- title: Python Developer & Systems Analyst<br>Canterbury Health Labs<br>Christchurch, New Zealand
+- title: BI & Python Developer<br>Canterbury Health Labs<br>Christchurch, New Zealand
   from: July 2018
   to: June 2016
   description: 
@@ -30,7 +35,7 @@
     •	Developed in-house windows applications using C# and SQL Server or MySQL database backends.<br>
     •	Developed web application <a href="http://mycatchment.info">MyCatchment</a> that is used by the local farmers in New Zealand to find out information for irrigation planning, consenting and design.<br>
 
-- title: Systems Support<br>Canterbury District Health Board<br>Christchurch, New Zealand
+- title: Systems Support Analyst<br>Canterbury District Health Board<br>Christchurch, New Zealand
   from: October 2015
   to: Jan 2014
   description:
