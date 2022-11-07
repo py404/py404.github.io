@@ -27,7 +27,7 @@
   color: success
 
 - name: Plotly
-  percentage: 75
+  percentage: 80
   color: 
 
 - name: BeautifulSoup &<br>Requests
@@ -35,7 +35,7 @@
   color: danger
 
 - name: Shiny &<br>ShinyDashboard
-  percentage: 80
+  percentage: 90
   color: info
 
 - name: ggplot2
@@ -47,5 +47,5 @@
   color: dark
   
 - name: Power BI
-  percentage: 75
+  percentage: 80
   color: success

@@ -1,18 +1,24 @@
-- title: Research Informatician<br>Institute of Environmental Science & Research (ESR)<br>Christchurch, New Zealand
-  from: Feb 2021
+- title: Product Owner | Analytics Specialist<br>AI & Engineering Tribe<br>Spark New Zealand<br>Christchurch, New Zealand
+  from: Nov 2021
   to: Present
   description: 
+    Building modern and cutting edge analytical and data science web apps in React, Python and R Shiny.
+
+- title: Research Informatician<br>Institute of Environmental Science & Research (ESR)<br>Christchurch, New Zealand
+  from: Feb 2021
+  to: Nov 2021
+  description: 
+    • Machine learning - Numpy, Pandas, Matplotlib, Seaborn, Plotly, Altair, Scikit-learn, PyTorch, Tensorflow <br>
+    • Software development - Python, React JS, Flask, Django, Flutter & Dart, C#, HTML, CSS, JavaScript, jQuery <br>
+    • Analytics & dashboards - Plotly Dash, Shiny, Tableau and Power BI <br>
+    • Container deployments - Docker, Kubernetes <br>
+    •	App deployments - Azure DevOps, Azure AKS platform <br>
+    • Databases - SQL Server, PostgreSQL, Mongo DB, Azure Comsos DB
 
 - title: Scientist (Data & Analytics) & Software Developer<br>Institute of Environmental Science & Research (ESR)<br>Christchurch, New Zealand
   from: July 2018
   to: Feb 2021
   description: 
-    • Machine learning - Numpy, Pandas, Matplotlib, Seaborn, Plotly, Altair, Scikit-learn, PyTorch, Tensorflow <br>
-    • Software development - Python, React JS, Flask, Django, Flutter & Dart, C#, HTML, CSS, JavaScript, jQuery <br>
-    • Analytics & dashboards - Plotly Dash, Shiny, Tableau and Power BI <br>
-    • Container deployments - Docker, Kubernetes and Singularity <br>
-    •	App deployments - Azure DevOps, Azure AKS platform <br>
-    • Databases - SQL Server, PostgreSQL, Mongo DB, Azure Comsos DB
 
 - title: BI & Python Developer<br>Canterbury Health Labs<br>Christchurch, New Zealand
   from: July 2018

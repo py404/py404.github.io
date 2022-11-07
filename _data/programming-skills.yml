@@ -3,36 +3,32 @@
   color: success
 
 - name: R
-  percentage: 80
+  percentage: 90
   color: 
 
 - name: Flask
-  percentage: 85
+  percentage: 90
   color: danger
   
 - name: Django
-  percentage: 85
+  percentage: 90
   color: warning
 
 - name: HTML5/CSS3/<br>JavaScript
-  percentage: 75
+  percentage: 90
   color: info
 
 - name: Dart & Flutter
-  percentage: 70
+  percentage: 75
   color: dark
 
-- name: React & Redux
-  percentage: 70
+- name: React
+  percentage: 85
   color: success
 
 - name: C#
   percentage: 65
   color: 
-
-- name: Java
-  percentage: 65
-  color: danger
 
 - name: Materialize CSS
   percentage: 75
